@@ -1,0 +1,281 @@
+@media (max-width: 1800px) {
+    .sale {
+        .tire {
+            width: 280px;
+        }
+    }
+    .sell {
+        &__inner {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
+@media (max-width: 1665px) {
+    .main {
+        &__img {
+            top: 100px;
+            img {
+                max-width: 700px;
+            }
+        }
+    }
+    .sale {
+        .tire {
+            display: none;
+        }
+        .car {
+            top: 25%;
+            width: 500px;
+        }
+    }
+
+    .choice {
+        background-size: 100% 130%;
+        background-position: 0% 54%;
+    }
+}
+@media (max-width: 1216px) {
+    .main {
+        &__img {
+            top: 260px;
+            img {
+                max-width: 700px;
+            }
+        }
+    }
+    .choice {
+        background: $black-color;
+        img {
+            display: none;
+        }
+    }
+    .sale {
+        .car {
+            top: 35%;
+            width: 350px;
+        }
+    }
+    .sell {
+        &__img {
+            text-align: right;
+        }
+        &__join-title {
+            margin: 50px 0;
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .header {
+        &__menu {
+            background: rgba(0, 0, 0, 0.87);
+            position: fixed;
+            left: -100%;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            transition: 1s;
+            transform: translate(0);
+            &.active {
+                left: 0;
+                transition: 1s;
+            }
+        }
+        &__menu-lists {
+            margin-top: 10%;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__menu-list {
+            padding: 20px;
+            a {
+                color: #fff;
+            }
+        }
+    }
+    .hamburger {
+        display: block;
+        z-index: 100;
+    }
+    .main {
+        &__content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        &__img {
+            position: static;
+            bottom: 0;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .choice {
+        padding: 70px 80px;
+    }
+    .advantages {
+        &__cards {
+            justify-content: center;
+        }
+        &__card {
+            background: #1c1b18b4;
+        }
+    }
+    .sale {
+        .car {
+            display: none;
+        }
+    }
+    .footer {
+        &__content {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__logo {
+            margin-bottom: 30px;
+            img {
+                max-width: 300px;
+            }
+        }
+        &__nav {
+            margin: 0 0 30px 0;
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 769px) {
+    .title,
+    .subtitle {
+        line-height: 40px;
+    }
+
+    .main {
+        padding: 20px 0 0 0;
+        &__promo {
+            left: 0;
+            bottom: 100px;
+        }
+        h1 {
+            line-height: 40px;
+        }
+    }
+    .choice {
+        padding: 50px 0;
+    }
+    .sell {
+        padding-top: 50px;
+    }
+    .advantages {
+        padding: 50px 0;
+        &__red-block,
+        &__white-block {
+            padding: 20px 10px 80px;
+            .keys {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 620px) {
+    .header {
+        &__content {
+            padding-right: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__logo,
+        &__contacts {
+            margin-bottom: 20px;
+        }
+    }
+    .main {
+        &__promo {
+            line-height: 18px;
+        }
+    }
+    .hamburger {
+        position: absolute;
+        right: -10px;
+        top: 5px;
+    }
+    .choice {
+        &__card-top,
+        &__card-bottom {
+            width: 100%;
+
+            &:nth-child(2) {
+                margin: 0;
+            }
+        }
+        &__top,
+        &__bottom {
+            &-text {
+                line-height: 25px;
+            }
+        }
+    }
+
+    .sell {
+        &__card {
+            height: 100%;
+            padding-bottom: 20px;
+        }
+        &__img {
+            height: 430px;
+            img {
+                width: 240px;
+            }
+        }
+    }
+    .sale {
+        &__lists-number {
+            margin: 20px 0 0 0;
+        }
+        &__list {
+            text-align: justify;
+        }
+        &__frame {
+            padding: 40px 10px 20px 35px;
+        }
+        &__subtitle {
+            line-height: 30px;
+        }
+    }
+    .advantages {
+        &__white-block {
+            line-height: 24px;
+        }
+        &__red-block {
+            line-height: 35px;
+        }
+    }
+    .footer {
+        &__logo {
+            img {
+                width: 150px;
+            }
+        }
+    }
+}
+@media (max-width: 426px) {
+    .container {
+        padding: 0 10px;
+    }
+    .header {
+        &__logo {
+            flex-direction: column;
+        }
+    }
+    .advantages {
+        &__card {
+            height: auto;
+        }
+    }
+    .footer {
+        &__nav {
+            column-count: 1;
+        }
+    }
+}

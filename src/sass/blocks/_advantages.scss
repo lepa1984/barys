@@ -1,0 +1,117 @@
+.advantages {
+    background: url("../img/bg-advantages.jpg") center (center/cover) no-repeat;
+    background-position: 0% 0;
+    padding: 150px 0 145px 0;
+    margin-top: -120px;
+
+    z-index: 49;
+    position: relative;
+
+    &__cards {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        column-gap: 30px;
+        margin-bottom: 55px;
+    }
+    &__title {
+        margin-bottom: 60px;
+        color: #fff;
+        text-align: center;
+    }
+    &__subtitle {
+        font-weight: 900;
+        margin-bottom: 50px;
+        font-size: calc(16px + 2 * ((100vw - 320px) / (1920 - 320)));
+    }
+    &__card {
+        max-width: 370px;
+        height: 370px;
+        padding: 0 0 0 25px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        border: 1px solid #eb2629;
+        border-bottom: 11px solid #eb2629;
+        p {
+            color: #fff;
+            text-align: left;
+        }
+        &:nth-child(2) {
+            img {
+                top: -55px;
+            }
+        }
+        &:nth-child(3) {
+            img {
+                top: -70px;
+            }
+        }
+    }
+    &__text {
+        font-size: calc(13px + 5 * ((100vw - 320px) / (1920 - 320)));
+        line-height: 28px;
+    }
+    &__img {
+        width: 100%;
+        min-height: 165px;
+        position: relative;
+        img {
+            position: absolute;
+            top: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__blocks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__white-block {
+        max-width: 900px;
+        width: 100%;
+
+        padding: 20px 0 90px 72px;
+        background: #ffffff;
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+        P {
+            font-size: calc(13px + 5 * ((100vw - 320px) / (1920 - 320)));
+            line-height: 34px;
+            span {
+                font-weight: 900;
+                text-transform: uppercase;
+            }
+        }
+    }
+    &__red-block {
+        max-width: 750px;
+        width: 100%;
+
+        margin-top: -67px;
+        padding: 25px 85px 0 100px;
+        position: relative;
+        background: #eb2629;
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+        img {
+            position: absolute;
+            left: -30%;
+            bottom: -60%;
+        }
+        P {
+            font-weight: 900;
+
+            font-size: calc(18px + 18 * ((100vw - 320px) / (1920 - 320)));
+            line-height: 50px;
+
+            text-align: center;
+
+            color: #ffffff;
+        }
+    }
+}

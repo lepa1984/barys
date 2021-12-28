@@ -1,0 +1,84 @@
+.header {
+    background: $white-color;
+    position: relative;
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        position: relative;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+        p {
+            width: 150px;
+            margin-left: 24px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+    }
+    &__menu {
+        margin: 0 auto;
+        position: absolute;
+        bottom: -37px;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 10;
+        width: 100%;
+
+        &-lists {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        &-list {
+            a {
+                display: block;
+                color: $black-color;
+                letter-spacing: 0.3px;
+                font-size: 13px;
+
+                transition: text-shadow 0.3s;
+                line-height: 13px;
+                text-transform: uppercase;
+                position: relative;
+                z-index: 1;
+                margin: 0 10px;
+                &:hover {
+                    text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        bottom: 1px;
+                        left: 3px;
+                        height: 4px;
+                        width: 100%;
+                        background: $main-color;
+                        transform: skewX(-30deg);
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+    &__contacts {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+    &__mail {
+        font-size: 13px;
+        line-height: 13px;
+        margin-bottom: 5px;
+    }
+    &__phone {
+        font-weight: 900;
+        font-size: calc(13px + 9 * ((100vw - 320px) / (1920 - 320)));
+
+        line-height: 22px;
+    }
+}

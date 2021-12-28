@@ -1,0 +1,78 @@
+.footer {
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 45px 0 33px;
+    }
+    &__logo {
+        img {
+            max-width: 360px;
+            height: 75px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: calc(13px + 5 * ((100vw - 320px) / (1920 - 320)));
+            line-height: 20px;
+
+            text-align: center;
+        }
+    }
+    &__nav {
+        width: 540px;
+        column-count: 2;
+        font-size: calc(14px + 2 * ((100vw - 320px) / (1920 - 320)));
+        margin: 0 40px;
+        li {
+            margin-bottom: 25px;
+        }
+    }
+    &__inner {
+        text-align: right;
+    }
+    &__phone {
+        font-size: 22px;
+        line-height: 22px;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+
+        &::before {
+            width: 18px;
+            height: 18px;
+            background-size: 18px;
+            left: -29px;
+            top: 3px;
+        }
+    }
+    &__address {
+        font-size: 14px;
+        line-height: 24px;
+        width: 237px;
+        text-align: right;
+    }
+    &__map {
+        font-size: calc(13px + 5 * ((100vw - 320px) / (1920 - 320)));
+        line-height: 28px;
+
+        text-align: right;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 1px;
+            background: $black-color;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    .copyright {
+        font-size: calc(13px + 5 * ((100vw - 320px) / (1920 - 320)));
+        line-height: 28px;
+        background: #ffffff;
+        width: 100%;
+        text-align: center;
+        padding: 22px 0;
+    }
+}

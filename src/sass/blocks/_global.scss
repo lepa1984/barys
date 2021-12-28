@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "Muller";
+    src: url("../fonts/muller/MullerBlack.woff2");
+    src: url("../fonts/muller/MullerBlack.woff");
+    font-weight: 900;
+}
+@font-face {
+    font-family: "Muller";
+    src: url("../fonts/muller/MullerMedium.woff2");
+    src: url("../fonts/muller/MullerMedium.woff");
+
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Muller";
+    src: url("../fonts/muller/MullerRegular.woff2");
+    src: url("../fonts/muller/MullerRegular.woff");
+
+    font-weight: 400;
+}
+body {
+    background: $bg-color;
+    &.active {
+        overflow: hidden;
+    }
+}
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 23px;
+}
+.body__active {
+    overflow: hidden;
+}
+.title {
+    font-weight: 900;
+    font-size: calc(24px + 18 * ((100vw - 320px) / (1920 - 320)));
+
+    line-height: 56px;
+}
+.red-text {
+    color: $main-color;
+    font-weight: 900;
+}
+.phone {
+    font-weight: 900;
+    background: #ffffff;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+
+    font-size: calc(20px + 16 * ((100vw - 320px) / (1920 - 320)));
+    line-height: 56px;
+
+    position: relative;
+    text-align: left;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 28px;
+        height: 28px;
+        background: url("../icons/phone.svg");
+        left: 33px;
+        top: 30px;
+    }
+}
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    img {
+        margin-right: 15px;
+    }
+    a {
+        font-size: calc(13px + 5 * ((100vw - 320px) / (1920 - 320)));
+        line-height: 28px;
+        margin-top: 25px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 1px;
+            background: $black-color;
+            bottom: 5px;
+            left: 0;
+        }
+    }
+}
+.btn {
+    width: 240px;
+    height: 60px;
+    border-radius: 6px;
+    background-color: #ff690f;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    z-index: 10;
+    text-align: center;
+    color: #fefefe;
+    text-transform: uppercase;
+    border: 0;
+    transition: 0.3s;
+}
+
+* {
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Muller";
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: $black-color;
+}

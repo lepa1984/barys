@@ -1,0 +1,48 @@
+.main {
+    position: relative;
+    padding: 100px 0 140px;
+
+    &__text {
+        margin-bottom: 40px;
+        h1 {
+            font-weight: 900;
+            font-size: calc(24px + 32 * ((100vw - 320px) / (1920 - 320)));
+            line-height: 80px;
+            max-width: 750px;
+            margin-bottom: 40px;
+        }
+        p {
+            font-weight: 300;
+
+            line-height: 30px;
+            max-width: 500px;
+        }
+    }
+    p {
+        font-size: calc(13px + 5 * ((100vw - 320px) / (1920 - 320)));
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+    &__promo {
+        position: relative;
+        padding: 10px 80px 10px 28px;
+        max-width: 400px;
+        width: 100%;
+
+        line-height: 30px;
+        background: $main-color;
+        color: #ffffff;
+        left: 24%;
+        bottom: 210px;
+
+        span {
+            display: block;
+            font-weight: 900;
+            color: #ffffff;
+        }
+    }
+}
